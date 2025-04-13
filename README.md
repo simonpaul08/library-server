@@ -1,5 +1,5 @@
 # Library Management System (Server)
-A role-based Library Management System with distinct user roles and permissions, allowing admins to onboard and manage readers efficiently.
+A role-based Library Management System with distinct user roles and permissions, allowing admins to onboard and manage readers efficiently. Implements RESTful APIs for user authentication, book inventory, lending workflows, and admin operations. Designed for performance, scalability, and clean code architecture.
 
 # Installation
 Clone the repo and install the dependencies(if any).
