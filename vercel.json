@@ -1,8 +1,8 @@
 {
-    "routes": [
+    "rewrites": [
         {
-            "src": "/(.*)",
-            "dest": "main.go"
+          "source": "/(.*)",
+          "destination": "main.go"
         }
     ]
 }
