@@ -2,11 +2,9 @@ package config
 
 import (
 	"fmt"
-	"log"
 	"os"
 	"project/libraryManagement/models"
 
-	"github.com/joho/godotenv"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
@@ -15,13 +13,6 @@ var DB *gorm.DB
 
 func ConnectToDB() {
 	var err error
-
-	envError := godotenv.Load(".env")
-
-	if envError != nil {
-		log.Fatalf("Error loading .env file")
-		return
-	}
 
 	db_url := (os.Getenv("DATABASE_URL"))
 

@@ -5,7 +5,6 @@ import (
 	"crypto/tls"
 	"errors"
 	"fmt"
-	"log"
 	"math/big"
 	"os"
 	"project/libraryManagement/config"
@@ -14,7 +13,6 @@ import (
 	"time"
 
 	"github.com/golang-jwt/jwt/v5"
-	"github.com/joho/godotenv"
 	"github.com/skip2/go-qrcode"
 	gomail "gopkg.in/mail.v2"
 )
@@ -56,12 +54,6 @@ func getRandNum() (string, error) {
 // send email
 func SendMail(email string, message string, subject string) error {
 
-	err := godotenv.Load(".env")
-
-	if err != nil {
-		log.Fatalf("Error loading .env file")
-		return errors.New("error loading env variables")
-	}
 
 	from := os.Getenv("EMAIL")
 	password := os.Getenv("EMAIL_PASSWORD")
