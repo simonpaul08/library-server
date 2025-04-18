@@ -71,5 +71,5 @@ func main() {
 	// public routes
 	r.GET("/book/lib/:id", controllers.RetrieveBooksByLib)
 
-	r.Run("3001")
+	r.Run("0.0.0.0:3001")
 }
