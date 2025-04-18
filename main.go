@@ -19,7 +19,7 @@ func main() {
 
 	// cors
     r.Use(cors.New(cors.Config{
-        AllowOrigins:     []string{"http://localhost:5173", "http://127.0.0.1:5173"},
+        AllowOrigins:     []string{"http://localhost:5173", "http://127.0.0.1:5173", "https://library-client-liard.vercel.app"},
         AllowMethods:     []string{"PUT", "PATCH", "GET", "POST", "DELETE", "OPTIONS"},
         AllowHeaders:     []string{"Origin", "Authorization", "token", "Content-Type", "Accept"},
         ExposeHeaders:    []string{"Content-Length"},
