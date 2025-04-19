@@ -34,6 +34,7 @@ func main() {
 	authRoutes := r.Group("/auth")
 	authRoutes.POST("/library", controllers.RegisterLibrary)
 	authRoutes.POST("/login", controllers.Login)
+	authRoutes.POST("/demo-login", controllers.DemoLogin)
 	authRoutes.POST("/otp/verify", controllers.VerifyUserOTP)
 
 	// owner routes
